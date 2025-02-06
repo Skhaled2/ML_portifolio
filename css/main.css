@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #16242b;
+}
+p{
+    color: gray;
+    font-size: 20px;
+}
+h4{
+    color: white;
+}
+h2{
+    color: white;
+}
+.navbar-brand img {
+    width:100px;
+    height: auto;
+}
+.navbar{
+   font-weight: 600;
+   background-color: rgba(0, 0, 0, 0.6);
+   border-bottom: 2px solid #7cacf3;
+}
+.nav-link{
+    transition: all 0.7s;
+}
+.nav-link:hover{
+    color: #7cacf3 !important;
+    text-decoration: underline;
+
+}
+
+
+/*------------------------home----------------*/
+.home{
+    background-image: url(../images/csjpg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.name{
+    color: #7cacf3;
+}
+.home-layer{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.animation-header:after{
+    content: "|";
+    animation-name: subtitle;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.caption h1{
+    font-size: 60px;
+}
+@keyframes subtitle {
+    0%{content: '|';}
+    2%{content: 'm|';}
+    4%{content: 'ma|';}
+    6%{content: 'mac|';}
+    8%{content: 'mach|';}
+    10%{content: 'machi|';}
+    15%{content: 'machin|';}
+    20%{content: 'machine|';}
+    25%{content: 'machine l|';}
+    30%{content: 'machine le|';}
+    35%{content: 'machine lea|';}
+    40%{content: 'machine lear|';}
+    45%{content: 'machine learn|';}
+    50%{content: 'machine learni|';}
+    55%{content: 'machine learnin|';}
+    60%{content: 'machine learning|';}
+    65%{content: 'machine learning e|';}
+    70%{content: 'machine learning en|';}
+    75%{content: 'machine learning eng|';}
+    80%{content: 'machine learning engi|';}
+    85%{content: 'machine learning engin|';}
+    90%{content: 'machine learning engine|';}
+    95%{content: 'machine learning enginee|';}
+    100%{content: 'machine learning engineer|';}
+  
+}
+.information-link{
+    /* border: 2px solid black; */
+    text-decoration: none;
+    color: white;
+    /* padding: 10px; */
+  /* margin-top: 1000px; */
+}
+.home_para{
+    font-size: 25px;
+}
+.text-center{
+    color: #f3f3f3;
+}
+.about-icon{
+    margin-right: 20o;
+}
+/* Custom background color for the Education Section */
+#education {
+    background-color: #2c3e50; /* Change this to your desired background color */
+}
+
+.card {
+    background-color: #34495e; /* Background color for each education card */
+    color: white;
+}
+
+.card .card-title {
+    color: #7cacf3; /* Title color */
+}
+
+.card .card-subtitle {
+    color: #c2c8cc; /* Subtitle color */
+}
+
+.card .card-text {
+    color: #ecf0f1; /* Text color */
+}
+.text-gray {
+    color: gray;
+    margin-bottom: 50px;
+}
+/* .button-link{
+    background-color: transparent;
+    border: 0.5px solid white;
+    transition: all 0.5s;
+}
+.button-link{
+    transition: 1.5s;
+}
+.button-link:hover{
+    
+    border: 0.5px solid #7cacf3;
+}
+.button-link a{
+    transition: 0.7;
+}
+.button-link:hover a{
+    
+    color:  #7cacf3;
+} */
+/*------------------------about--------------------------------------------------*/
+.about-icons{
+    font-size: 30px;
+    padding: 10px;
+}
+.about-icon {
+    font-size: 4em; 
+    padding: 10px;
+    margin: 20px;
+    /* border: 1px solid black; */
+    color: #7cacf3;
+}
+.about-desc{
+    text-align: center;
+    padding: 10px;
+    color: gray;
+}
+.card{
+    transition: 1s;
+    overflow: hidden;
+    box-shadow: 0 0 20px 15px rgba(7, 11, 106, 0.4);
+}
+.card-body{
+    text-align: center;
+}
+.progress{
+    margin: 10px;
+    width: 100%;
+    height: 5%;
+}
+.skills_desc{
+    /* padding: 3px;
+    margin: 2px; */
+    background-color: rgba(132, 83, 216, 0.082);
+    border-radius: 10px;
+    color: #854ce6;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px 8px;
+}
+/* /////////////////////////////// */
+.pr{
+    /* margin-left: 100px; */
+    margin-top: 40px;
+    padding-bottom: 40px;
+
+}
+.projects_word{
+    padding-top: 30px;
+/* text-decoration: underline;     */
+}
+.project_para{
+    font-size: 20px;
+}
+
+.card-img-top {
+    transition: transform 0.5s;
+  }
+  
+  .overlay {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition:  2s;
+    /* background-color: white; */
+  }
+  .overlay-text a{
+    color :#854ce6;
+    border: 1px solid #854ce6;
+    padding: 7px;
+    border-radius: 5px;
+    text-decoration: none;
+
+  }
+  .overlay:hover .overlay-text {
+    opacity: 1;
+  }
+  
+  .overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .overlay:hover::before {
+    opacity: 1; 
+  }
+  
+  /* .overlay:hover .card-img-top {
+    transform: scale(1.1);
+  } */
+  .card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 12px 4px rgba(246, 244, 244, 0.4);  }
+  .card:hover img{
+    transform:scale(1.07) ;
+  }
+/* .skill-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px
+}
+  .skill-item {
+    align-items: center;
+    border: 1px solid #f2f3f4;
+    border-radius: 12px;
+    color: #171b1f;
+    font-size: 16px;
+    font-weight: 400;
+    gap: 8px;
+    padding: 12px 16px;
+    width: 10px;
+} */
+.card.skills{
+    background-color: transparent;
+    color: white;
+}
+.skill-item{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(20, 8, 59);
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.skill-item span{
+   color: gray;
+}
+.card.seif{
+    background-color: transparent;
+}
+    /* start footer /////////////////////////////////////////////*/
+.arrow{
+    font-size: 40px;
+    color: #7cacf3;
+    padding: 10px;
+}
+.footerback{
+    background-color: #111e33;
+}
+.links{
+    padding-top: 20px;
+}
+.link-item{
+    padding: 10px;
+    font-size: 30px;
+    /* border: 2px solid #32445f; */
+    margin: 10px;
+    /* background-color: #32445f; */
+    transition: 1s;
+
+}
+.link-item a{
+    color: white;
+    transition: 1s;
+}
+.fa-brands{
+    color: white;
+}
+.link-item.face:hover a{
+    color: #3b5998;
+}
+.link-item.face:hover{
+    /* color: #3b5998; */
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.link-item.git:hover a{
+    color:#fbad50;
+}
+.link-item.git:hover{
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.link-item.linked:hover a{
+    color: #8598bf;
+}
+.link-item.linked:hover{
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.link-item.insta:hover a{
+    color:#cd486b ;
+}
+.link-item.insta:hover{
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.permission{
+    margin-top: 10px;
+}
+.seif {
+    max-width: 90%;
+    padding: 10px;
+  }
+  
+  .seif img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 576px) { /* Mobile screens */
+    .seif {
+      max-width: 100%; /* Full width on small screens */
+      padding: 5px; /* Reduce padding */
+    }
+
+    .seif img {
+      height: 200px; /* Reduce image height */
+    }
+
+    .seif .card-text {
+      font-size: 12px; /* Smaller font for better readability */
+    }
+
+    .seif .btn {
+      font-size: 12px; /* Adjust button size */
+      padding: 5px 10px;
+    }
+  }
+   /* General Responsive Adjustments */
+   @media (max-width: 768px) {
+    /* Navigation */
+    .navbar-brand {
+        margin-left: 1rem !important;
+    }
+    
+    /* Home Section */
+    .home h1 {
+        font-size: 2rem;
+    }
+    .home h3 {
+        font-size: 1.5rem;
+    }
+    .home_para {
+        padding: 0 1rem;
+    }
+
+    /* About Section */
+    .seif {
+        width: 100% !important;
+        margin-bottom: 2rem;
+    }
+    .skills {
+        width: 100% !important;
+    }
+
+    /* Projects Section */
+    .card {
+        width: 100% !important;
+    }
+    
+    /* Contact Section */
+    .contact-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-info .email {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Education Cards */
+    .card {
+        margin: 0 1rem;
+    }
+    
+    /* Skill Items */
+    .skill-item {
+        font-size: 0.9rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    /* Project Cards */
+    .skills_desc {
+        font-size: 0.8rem;
+    }
+}
+
+/* Always ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Card adjustments for mobile */
+.card {
+    transition: transform 0.5s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Skill items wrapping */
+.skill-list {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+/* Education Section Specific Styles */
+#education .card {
+    background: #0a1120;
+    border: 1px solid #1a2333;
+    transition: all 0.3s ease;
+    min-height: 220px;
+}
+
+#education .card:hover {
+    transform: translateY(-5px);
+    border-color: #2a3a5a;
+}
+
+#education i {
+    min-width: 60px;
+}
+ /* Add this to your existing styles */
+ #education p {
+  color: rgb(167, 164, 164) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #education .col-md-6 {
+        padding: 0 15px;
+    }
+    
+    #education .card {
+        margin-bottom: 1.5rem;
+        min-height: auto;
+    }
+
+    #education .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #education i {
+        margin-bottom: 1rem;
+        font-size: 2rem !important;
+    }
+
+    #education h4 {
+        font-size: 1.2rem;
+    }
+
+    #education h5 {
+        font-size: 1rem;
+    }
+
+    #education .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #education .card {
+        margin: 0 10px 1.5rem 10px;
+    }
+
+    #education h4 {
+        font-size: 1.1rem;
+    }
+
+    #education h5 {
+        font-size: 0.95rem;
+    }
+}
